@@ -1,61 +1,58 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
+    margin:0;
+    font-family:Arial, sans-serif;
     background:#050505;
     color:white;
 }
 
-h1{
+header{
     text-align:center;
-    margin-top:40px;
-    font-size:45px;
-    color:#ffd000;
-    text-transform:uppercase;
+    padding:40px;
+    background:#000;
 }
 
-p{
-    text-align:center;
-    margin-top:20px;
-    font-size:20px;
-    color:#ddd;
+header h1{
+    color:#ffc400;
+    font-size:40px;
 }
 
 .hero{
-    height:400px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.9)
-    );
-}
-
-.card{
-    width:300px;
-    margin:30px auto;
-    padding:20px;
-    background:#111;
-    border-radius:15px;
-    border:1px solid #333;
     text-align:center;
+    padding:60px 20px;
+    background:#111;
 }
 
-.card h2{
-    color:#ffd000;
+.hero h2{
+    color:#ffc400;
+    font-size:35px;
 }
 
 button{
-    margin-top:15px;
-    padding:12px 25px;
-    background:#ffd000;
+    background:#ffc400;
+    color:black;
     border:none;
-    border-radius:25px;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:8px;
     font-weight:bold;
-    cursor:pointer;
-      }
+}
+
+.card{
+    display:inline-block;
+    width:260px;
+    margin:20px;
+    padding:25px;
+    background:#151515;
+    border:1px solid #333;
+    border-radius:15px;
+}
+
+.card h3{
+    color:#ffc400;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+}
