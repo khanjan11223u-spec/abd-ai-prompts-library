@@ -1,134 +1,100 @@
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
 body{
-    background:#050505;
-    color:white;
+  background:#050505;
+  color:white;
 }
 
 header{
-    text-align:center;
-    padding:25px;
-    background:#000;
-    border-bottom:1px solid #222;
+  text-align:center;
+  padding:25px;
+  background:#000;
 }
 
 header h1{
-    color:#ffc400;
-    font-size:32px;
+  color:#ffc400;
+  font-size:32px;
 }
 
 header p{
-    color:#aaa;
-    margin-top:10px;
-}
-
-nav{
-    margin-top:15px;
+  color:#ddd;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:8px;
-    font-size:14px;
+  color:#ffc400;
+  text-decoration:none;
+  margin:8px;
+  font-size:14px;
 }
 
-nav a:hover{
-    color:#ffc400;
-}
-
-/* AI Library Hero */
 .hero{
-    min-height:520px;
-    background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-    url("ai-library-bg.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:50px;
+  min-height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:50px;
+  background-image:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url('ai-library-background.png');
+  background-size:cover;
+  background-position:center;
 }
 
 .hero h2{
-    font-size:48px;
-    color:#ffc400;
-    max-width:700px;
+  font-size:45px;
+  color:#ffc400;
+  max-width:700px;
 }
 
 .hero p{
-    font-size:20px;
-    margin:20px 0;
-    color:#ddd;
+  font-size:18px;
+  margin:20px 0;
 }
 
 button{
-    background:#ffc400;
-    color:black;
-    border:none;
-    padding:15px 30px;
-    margin:10px;
-    border-radius:5px;
-    font-weight:bold;
+  background:#ffc400;
+  border:none;
+  padding:15px 25px;
+  margin:10px;
+  font-weight:bold;
+  border-radius:5px;
 }
 
-/* Cards */
 .title{
-    color:#ffc400;
-    margin:30px;
-    font-size:28px;
+  padding:30px;
+  color:#ffc400;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  padding:20px;
 }
 
 .card{
-    background:#151515;
-    border:1px solid #333;
-    padding:25px;
-    border-radius:15px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    border-color:#ffc400;
+  background:#151515;
+  border:1px solid #333;
+  padding:30px;
+  border-radius:15px;
 }
 
 .card h3{
-    color:#ffc400;
-    font-size:22px;
+  color:#ffc400;
+  margin-bottom:15px;
 }
 
 .card p{
-    color:#bbb;
-    margin-top:12px;
+  color:#ccc;
 }
 
-/* Mobile */
-@media(max-width:600px){
-
-.hero{
-    padding:25px;
+footer{
+  text-align:center;
+  padding:30px;
+  background:#000;
 }
-
-.hero h2{
-    font-size:32px;
-}
-
-nav a{
-    display:inline-block;
-}
-
-    }
