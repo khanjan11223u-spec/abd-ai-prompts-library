@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -10,99 +11,116 @@ body{
     color:white;
 }
 
-/* Navbar */
 header{
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #222;
+    background:#000;
+    padding:30px;
+    text-align:center;
+    border-bottom:1px solid #333;
 }
 
 header h1{
     color:#ffc400;
-    font-size:28px;
+    font-size:38px;
+    letter-spacing:2px;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:15px;
+header p{
+    color:#ccc;
+    margin-top:10px;
 }
 
-nav a:hover{
-    color:#ffc400;
-}
+/* Hero Section */
 
-
-/* Hero */
 .hero{
-    min-height:500px;
-    padding:100px 8%;
+    min-height:450px;
+    padding:80px 8%;
     background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
-    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7") center/cover;
+    linear-gradient(to right,#000 20%,transparent),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
 }
 
 .hero h2{
     font-size:55px;
-    max-width:600px;
-}
-
-.hero span{
     color:#ffc400;
+    max-width:700px;
 }
 
 .hero p{
+    font-size:20px;
     margin:20px 0;
-    font-size:18px;
+    color:#ddd;
 }
 
 button{
     background:#ffc400;
     border:none;
     padding:15px 30px;
-    border-radius:8px;
+    margin:10px;
+    border-radius:5px;
     font-weight:bold;
-    margin-right:10px;
+    cursor:pointer;
 }
-
 
 /* Categories */
-section{
-    padding:50px 8%;
-}
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
+h2{
+    padding:30px;
+    color:#ffc400;
 }
 
 .card{
-    background:#111;
-    padding:30px;
+    display:inline-block;
+    width:280px;
+    min-height:180px;
+    background:#151515;
+    margin:20px;
+    padding:25px;
     border-radius:15px;
-    border:1px solid #222;
+    border:1px solid #333;
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
     border-color:#ffc400;
 }
 
 .card h3{
     color:#ffc400;
+    font-size:24px;
     margin-bottom:15px;
 }
 
+.card p{
+    color:#ccc;
+    line-height:1.5;
+}
 
-/* Footer */
+/* Netflix style sections */
+
+section{
+    padding:30px 5%;
+}
+
 footer{
+    background:#000;
     text-align:center;
     padding:30px;
-    border-top:1px solid #222;
     color:#aaa;
+    margin-top:40px;
 }
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero h2{
+    font-size:35px;
+}
+
+.card{
+    width:90%;
+}
+
+                    }
