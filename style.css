@@ -1,21 +1,17 @@
-
 *{
-margin:0;
-padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
 body{
+margin:0;
 background:#050505;
 color:white;
 }
 
-/* Header */
-
 header{
 text-align:center;
-padding:25px 10px;
+padding:25px;
 background:#000;
 }
 
@@ -25,12 +21,7 @@ font-size:32px;
 }
 
 header p{
-color:#ccc;
-margin-top:8px;
-}
-
-nav{
-margin-top:15px;
+color:#ddd;
 }
 
 nav a{
@@ -41,18 +32,16 @@ font-size:14px;
 }
 
 
-/* Hero */
-
 .hero{
-height:550px;
+min-height:520px;
 display:flex;
 flex-direction:column;
 justify-content:center;
-padding:40px;
+padding:50px;
 
-background-image:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("./ai-library-background.png");
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("ai-library-background.png");
 
 background-size:cover;
 background-position:center;
@@ -61,36 +50,29 @@ background-position:center;
 
 .hero h2{
 font-size:45px;
-max-width:700px;
 color:#ffc400;
+max-width:750px;
 }
 
 
 .hero p{
 font-size:18px;
-margin:20px 0;
-color:white;
 }
 
 
 button{
 background:#ffc400;
-color:#000;
 border:none;
 padding:15px 30px;
-margin:8px;
-border-radius:5px;
+margin:10px;
 font-weight:bold;
-cursor:pointer;
+border-radius:8px;
 }
 
 
-/* Sections */
-
 .title{
-color:#ffc400;
-font-size:28px;
 padding:30px;
+color:#ffc400;
 }
 
 
@@ -105,7 +87,7 @@ padding:20px;
 .card{
 background:#151515;
 border:1px solid #333;
-padding:25px;
+padding:30px;
 border-radius:15px;
 transition:.3s;
 }
@@ -119,43 +101,17 @@ border-color:#ffc400;
 
 .card h3{
 color:#ffc400;
-margin-bottom:15px;
-font-size:20px;
 }
 
 
 .card p{
 color:#ccc;
-line-height:1.5;
 }
 
-
-/* Footer */
 
 footer{
-background:#000;
 text-align:center;
-padding:25px;
-margin-top:30px;
+padding:20px;
+background:#000;
 color:#aaa;
 }
-
-
-/* Mobile */
-
-@media(max-width:600px){
-
-.hero{
-height:450px;
-padding:25px;
-}
-
-.hero h2{
-font-size:32px;
-}
-
-nav a{
-font-size:12px;
-}
-
-  }
