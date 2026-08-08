@@ -32,6 +32,7 @@ font-size:14px;
 }
 
 
+/* HERO BACKGROUND */
 .hero{
 min-height:520px;
 display:flex;
@@ -40,7 +41,7 @@ justify-content:center;
 padding:50px;
 
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.40)),
 url("ai-library-background.png");
 
 background-size:cover;
@@ -48,41 +49,54 @@ background-position:center;
 }
 
 
+/* HERO TITLE */
 .hero h2{
 font-size:45px;
 color:#ffc400;
 max-width:750px;
+text-shadow:0 2px 8px rgba(0,0,0,.8);
 }
-
 
 .hero p{
 font-size:18px;
+color:#fff;
+text-shadow:0 2px 6px rgba(0,0,0,.8);
 }
 
 
+/* BUTTONS */
 button{
 background:#ffc400;
+color:#111;
 border:none;
 padding:15px 30px;
 margin:10px;
 font-weight:bold;
 border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#fff;
+transform:translateY(-2px);
 }
 
 
+/* SECTION TITLES */
 .title{
 padding:30px;
 color:#ffc400;
 }
 
 
+/* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 padding:20px;
 }
-
 
 .card{
 background:#151515;
@@ -92,26 +106,62 @@ border-radius:15px;
 transition:.3s;
 }
 
-
 .card:hover{
 transform:translateY(-8px);
 border-color:#ffc400;
+box-shadow:0 8px 25px rgba(255,196,0,.15);
 }
-
 
 .card h3{
 color:#ffc400;
 }
-
 
 .card p{
 color:#ccc;
 }
 
 
+/* FOOTER */
 footer{
 text-align:center;
 padding:20px;
 background:#000;
 color:#aaa;
+}
+
+
+/* MOBILE */
+@media(max-width:600px){
+
+header h1{
+font-size:25px;
+}
+
+nav a{
+font-size:12px;
+margin:5px;
+}
+
+.hero{
+min-height:500px;
+padding:35px 20px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.cards{
+grid-template-columns:1fr;
+padding:15px;
+}
+
+.card{
+padding:25px;
+}
+
 }
