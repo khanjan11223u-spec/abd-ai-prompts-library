@@ -1,3 +1,4 @@
+
 *{
 box-sizing:border-box;
 font-family:Arial,sans-serif;
@@ -9,6 +10,7 @@ background:#050505;
 color:white;
 }
 
+/* HEADER */
 header{
 text-align:center;
 padding:25px;
@@ -32,7 +34,7 @@ font-size:14px;
 }
 
 
-/* HERO BACKGROUND */
+/* HERO */
 .hero{
 min-height:520px;
 display:flex;
@@ -41,7 +43,7 @@ justify-content:center;
 padding:50px;
 
 background:
-linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.40)),
+linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.28)),
 url("ai-library-background.png");
 
 background-size:cover;
@@ -64,17 +66,19 @@ text-shadow:0 2px 6px rgba(0,0,0,.8);
 }
 
 
-/* BUTTONS */
+/* SMALL BUTTONS */
 button{
 background:#ffc400;
 color:#111;
 border:none;
-padding:15px 30px;
-margin:10px;
+padding:10px 18px;
+margin:8px 4px;
 font-weight:bold;
-border-radius:8px;
+font-size:12px;
+border-radius:7px;
 cursor:pointer;
 transition:.3s;
+width:auto;
 }
 
 button:hover{
@@ -143,8 +147,8 @@ margin:5px;
 }
 
 .hero{
-min-height:500px;
-padding:35px 20px;
+min-height:450px;
+padding:30px 20px;
 }
 
 .hero h2{
@@ -153,6 +157,13 @@ font-size:34px;
 
 .hero p{
 font-size:16px;
+}
+
+/* MOBILE BUTTONS */
+button{
+padding:9px 14px;
+font-size:11px;
+margin:6px 3px;
 }
 
 .cards{
