@@ -1,32 +1,216 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Car Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Car Projects | ABD AI Prompts Library</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.car-page{
+padding:40px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.car-page h2{
+text-align:center;
+color:#ffc400;
+font-size:38px;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#ccc;
+margin-bottom:35px;
+}
+
+.prompt-card{
+background:#151515;
+border:1px solid #333;
+border-radius:15px;
+padding:25px;
+margin-bottom:25px;
+}
+
+.prompt-card h3{
+color:#ffc400;
+margin-top:0;
+}
+
+.prompt{
+background:#080808;
+border:1px solid #333;
+border-radius:10px;
+padding:18px;
+color:#ddd;
+line-height:1.6;
+margin:15px 0;
+}
+
+.copy-btn{
+background:#ffc400;
+color:#111;
+border:0;
+padding:10px 18px;
+border-radius:7px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.copy-btn:hover{
+background:white;
+}
+
+.back-btn{
+display:inline-block;
+margin:20px;
+color:#ffc400;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="hero">
-<h1>🚗 Car Projects</h1>
-<p>Professional AI Car Restoration Prompts</p>
+<header>
 
-<div class="card">
-<h2>🚘 Rusted Muscle Car Restoration</h2>
-<p>Scene by Scene Image & Video Prompts</p>
+<h1>🚀 ABD AI PROMPTS LIBRARY</h1>
+
+<p>The Ultimate AI Image & Video Prompt Collection</p>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="car-projects.html">CAR PROJECTS</a>
+<a href="#">AI VIDEOS</a>
+<a href="#">HISTORY</a>
+<a href="#">ISLAMIC STORIES</a>
+<a href="#">AI CHARACTERS</a>
+</nav>
+
+</header>
+
+
+<a class="back-btn" href="index.html">← Back to Home</a>
+
+
+<section class="car-page">
+
+<h2>🚗 AI CAR PROJECTS</h2>
+
+<p class="subtitle">
+Cinematic car restoration, supercars and realistic automotive AI videos.
+</p>
+
+
+<div class="prompt-card">
+
+<h3>🔥 Rusty Car Restoration</h3>
+
+<div class="prompt" id="prompt1">
+A heavily rusted and abandoned American muscle car sitting in a dirty
+junkyard, covered with dust, rust and damaged parts. Professional mechanics
+discover the vehicle and transport it to a modern automotive workshop.
+Cinematic lighting, realistic metal textures, dramatic camera angles,
+photorealistic, ultra detailed, 4K.
 </div>
 
-<div class="card">
-<h2>🏎 Classic Car Rebuild</h2>
-<p>Coming Soon</p>
-</div>
-
-<div class="card">
-<h2>🚓 Police Car Transformation</h2>
-<p>Coming Soon</p>
-</div>
+<button class="copy-btn" onclick="copyPrompt('prompt1')">
+📋 Copy Prompt
+</button>
 
 </div>
+
+
+
+<div class="prompt-card">
+
+<h3>🛠️ Complete Car Restoration</h3>
+
+<div class="prompt" id="prompt2">
+Professional mechanics completely restore an old rusty American muscle car.
+They remove dirt and damaged parts, wash the vehicle, repair the body,
+remove rust, prepare the metal and apply a premium glossy paint finish.
+Realistic workshop environment, cinematic lighting, detailed tools,
+photorealistic automotive restoration, 4K.
+</div>
+
+<button class="copy-btn" onclick="copyPrompt('prompt2')">
+📋 Copy Prompt
+</button>
+
+</div>
+
+
+
+<div class="prompt-card">
+
+<h3>🏎️ Luxury Interior Upgrade</h3>
+
+<div class="prompt" id="prompt3">
+A fully restored American muscle car receiving a premium luxury interior.
+Mechanics remove the old seats and carpets, install VIP leather seats,
+premium carpets, modern interior lighting and a redesigned dashboard.
+Ultra realistic materials, cinematic workshop lighting, professional
+automotive photography, highly detailed, 4K.
+</div>
+
+<button class="copy-btn" onclick="copyPrompt('prompt3')">
+📋 Copy Prompt
+</button>
+
+</div>
+
+
+
+<div class="prompt-card">
+
+<h3>✨ Final Reveal</h3>
+
+<div class="prompt" id="prompt4">
+The transformation of an abandoned rusty American muscle car into a
+beautiful premium supercar. The restored vehicle has a glossy paint finish,
+luxury interior, new wheels and perfect bodywork. The car drives out of
+the modern workshop into a cinematic sunset. Dramatic camera movement,
+realistic reflections, photorealistic, cinematic masterpiece, 4K.
+</div>
+
+<button class="copy-btn" onclick="copyPrompt('prompt4')">
+📋 Copy Prompt
+</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 ABD AI Prompts Library</p>
+
+</footer>
+
+
+<script>
+
+function copyPrompt(id){
+
+let text = document.getElementById(id).innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("✅ Prompt Copied!");
+
+}
+
+</script>
 
 </body>
   </html>
