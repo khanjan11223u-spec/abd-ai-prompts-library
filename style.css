@@ -15,6 +15,7 @@ text-align:center;
 padding:25px;
 background:#000;
 border-bottom:1px solid #ffc400;
+position:relative;
 }
 
 header h1{
@@ -31,6 +32,30 @@ color:#ffc400;
 text-decoration:none;
 margin:8px;
 font-size:14px;
+}
+
+
+/* ABOUT BUTTON - TOP RIGHT */
+.about-btn{
+position:absolute;
+top:20px;
+right:20px;
+background:#ffc400;
+color:#111;
+padding:10px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+border:2px solid #ffc400;
+box-shadow:0 0 15px rgba(255,196,0,.5);
+transition:.3s;
+}
+
+.about-btn:hover{
+background:#fff;
+border-color:#fff;
+box-shadow:0 0 25px rgba(255,196,0,.8);
 }
 
 
@@ -160,6 +185,25 @@ margin:0;
 }
 
 
+/* ABOUT PAGE */
+.about-content{
+max-width:900px;
+margin:0 auto;
+padding:20px;
+}
+
+.about-content p{
+color:#ddd;
+font-size:17px;
+line-height:1.7;
+padding:0 10px;
+}
+
+.about-content b{
+color:#ffc400;
+}
+
+
 /* FOOTER */
 footer{
 text-align:center;
@@ -180,6 +224,13 @@ font-size:25px;
 nav a{
 font-size:12px;
 margin:5px;
+}
+
+.about-btn{
+top:15px;
+right:15px;
+padding:8px 18px;
+font-size:12px;
 }
 
 .hero{
@@ -222,4 +273,4 @@ padding:15px;
 height:200px;
 }
 
-                         }
+}
