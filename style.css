@@ -40,11 +40,16 @@ min-height:600px;
 display:flex;
 flex-direction:column;
 justify-content:flex-end;
-align-items:flex-start;
-padding:50px;
+align-items:center;
+text-align:center;
+padding:50px 20px 60px 20px;
+margin:20px;
+border:3px solid #ffc400;
+border-radius:20px;
+box-shadow:0 0 30px rgba(255,196,0,.5), inset 0 0 30px rgba(255,196,0,.1);
 
 background:
-linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.70)),
+linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.75)),
 url("hero-bg.jpg");
 
 background-size:cover;
@@ -75,22 +80,23 @@ display:inline-block;
 background:#ffc400;
 color:#111;
 border:2px solid #ffc400;
-padding:18px 40px;
-margin:8px 4px;
+padding:20px 60px;
+margin:20px 0 0 0;
 font-weight:bold;
-font-size:18px;
-border-radius:10px;
+font-size:20px;
+border-radius:12px;
 cursor:pointer;
 transition:.3s;
 width:auto;
-box-shadow:0 0 20px rgba(255,196,0,.5);
+min-width:280px;
+box-shadow:0 0 25px rgba(255,196,0,.6), 0 0 50px rgba(255,196,0,.3);
 }
 
 button:hover{
 background:#fff;
 border-color:#fff;
 transform:translateY(-3px);
-box-shadow:0 0 30px rgba(255,196,0,.8);
+box-shadow:0 0 30px rgba(255,196,0,.8), 0 0 60px rgba(255,196,0,.5);
 }
 
 
@@ -171,7 +177,8 @@ margin:5px;
 
 .hero{
 min-height:500px;
-padding:30px 20px;
+padding:30px 15px 40px 15px;
+margin:10px;
 justify-content:flex-end;
 }
 
@@ -185,10 +192,11 @@ margin-bottom:20px;
 }
 
 button{
-padding:16px 30px;
+padding:18px 30px;
 font-size:16px;
-margin:6px 0;
+margin:15px 0 0 0;
 width:100%;
+min-width:auto;
 box-shadow:0 0 15px rgba(255,196,0,.5);
 }
 
